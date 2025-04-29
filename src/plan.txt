@@ -1,0 +1,10 @@
+Header component:
+ Desktop:
+    logo component
+        image
+    Navigation component
+        Array comes from data file
+        NavItem component
+ Mobile:
+    MobileNavigation component
+        

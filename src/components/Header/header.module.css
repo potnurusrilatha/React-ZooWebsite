@@ -1,0 +1,49 @@
+.header {
+    align-items: center;
+    background-color: black;
+    /* border-radius: 20px; */
+    color:white;
+    display: flex;
+    padding: 20px 20px;
+    /* margin-top: 2rem; */
+    position: relative;
+    /* z-index: 100; */
+    
+    
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.logo {
+    width: auto;
+    height: 5rem;
+}
+
+.menuItem {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 16px 48px;
+    }
+    .title {
+        font-size: 1.8rem;  
+        padding: 8px 4px;
+    }
+    .logo {
+        height: 3rem;
+    }
+
+}
