@@ -1,0 +1,65 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Welcome section */
+.welcome {
+    background-color: rgb(204, 236, 156);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 12px black;
+}
+
+.welcomeWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.welcomeTitle {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Animal details section */
+.animalDetails {
+    background-color: rgba(250, 248, 239, 0.8);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.animalDetailsContent {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animalDetails img {
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
