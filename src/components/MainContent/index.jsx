@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './MainContent.module.css';
+import styles from './mainContent.module.css';
 
 const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
   const [isExpanded, setIsExpanded] = useState(false);
