@@ -2,7 +2,7 @@ import styles from '../Animals/animals.module.css';
 import { animalArray } from '../../data/animals';
 import SideBar from '../../components/SideBar';
 import MainContent from '../../components/MainContent';
-import homeVideo from '../../assets/video/home.mp4';
+import homeVideo from '../../assets/video/Home.mp4';
 import { useState } from 'react'
 
 
