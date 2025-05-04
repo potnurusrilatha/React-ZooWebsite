@@ -1,110 +1,111 @@
 .sidebar {
-    /* position: fixed; */
-    top: 50px;
-    left: 0;
-    width: 250px;
-    background-color: black;
-    color: white;
-    padding-top: 10px;
-    transform: translateX(0);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-  }
+  /* position: fixed; */
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  width: 300px;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  height: 95%;
+}
   
-  .sidebarOpen {
-    transform: translateX(0);
-  }
+.sidebarOpen {
+  transform: translateX(0);
+}
   
-  .sidebarClosed {
-    transform: translateX(-100%);
-  }
+.sidebarClosed {
+  transform: translateX(-100%);
+}
   
-  /* Sidebar List */
-  .sidebarListMenu {
-    list-style-type: none;
-    padding: 0;
-  }
+.sidebarListMenu {
+  list-style-type: none;
+  padding: 0;
+}
   
-  .sidebarListItem {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 20px;
-    border-bottom: 1px solid white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .sidebarListItem:hover,
-  .sidebarListItem.active  {
-    background-color: #00bcd4;
-    color: black;
-    font-weight: bold;
-    border-radius: 4px;
-  }
+.sidebarListItem:hover,
+.sidebarListItem.active  {
+  background-color: #00bcd4;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+}
 
-  .icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-  }
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
   
-  .icon img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
+.icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
   
-  /* Toggle Button Position */
-  .toggleButtonWrapper {
-    /* position: fixed; */
-    top: 100px;
-    left: 250px; /* matches sidebar width */
-    z-index: 1100;
-    transition: left 0.3s ease;
-  }
+/* Toggle Button Position */
+.toggleButtonWrapper {
+  /* position: fixed; */
+  top: 250px;
+  left: 300px; 
+  z-index: 1100;
+  transition: left 0.3s ease;
+}
   
-  .toggleButtonWrapper.closed {
-    left: 0;
-  }
+.toggleButtonWrapper.closed {
+  left: 0;
+}
   
   /* Button Styles */
-  .toggleButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 6px 6px 0;
+}
   
   /* Arrow Styles */
-  .arrow {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid black;
-    transition: transform 0.3s ease;
-  }
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  transition: transform 0.3s ease;
+}
   
-  .left {
-    transform: rotate(180deg);
-  }
+.left {
+  transform: rotate(180deg);
+}
   
-  .right {
-    transform: rotate(0deg);
-  }
+.right {
+  transform: rotate(0deg);
+}
 
-  .active {
-    background-attachment: #00bcd4;
-    color: white;
-    font-weight: bold;
-    border-radius: 4px;
-  }
+.active {
+  background-attachment: #00bcd4;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}

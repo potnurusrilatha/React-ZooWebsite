@@ -3,7 +3,7 @@ import styles from '../../Animals/animals.module.css';
 import { animalArray } from '../../../data/animals';
 import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent';
-import birdsVideo from '../../../assets/video/birds.mp4'; // Replace with your bird video
+import birdsVideo from '../../../assets/video/birds.mp4';
 import PopUp from '../../../components/PopUp';
 
 const Birds = () => {
@@ -28,7 +28,7 @@ const Birds = () => {
           autoPlay 
           muted
           type="video/mp4" />
-        <h1 className={styles.homeTitle}>Welcome to the Sky</h1>
+        <h1 className={styles.homeTitle}>Welcome to the Feathers</h1>
       </div>
       <div className={styles.main}>
         {/* Sidebar will handle selecting an animal */}
@@ -39,10 +39,10 @@ const Birds = () => {
 
         {/* Main content will display selected animal details or welcome message */}
         <MainContent
-          clickedAnimal={clickedAnimal}  // Pass clicked animal to display details
-          animalPopUp={togglePopUp}       // Toggle pop-up on click
+          clickedAnimal={clickedAnimal}  
+          animalPopUp={togglePopUp}       
           defaultMessage={{
-            title: "Welcome to the Birds Page!",
+            title: "Welcome to the Feathers Page!",
             description: "Explore our collection of fascinating birds."
           }}
         />

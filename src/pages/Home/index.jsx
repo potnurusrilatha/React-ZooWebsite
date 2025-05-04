@@ -1,10 +1,18 @@
-import styles from './home.module.css';
+import styles from '../Animals/animals.module.css';
 import { animalArray } from '../../data/animals';
 import SideBar from '../../components/SideBar';
 import MainContent from '../../components/MainContent';
 import homeVideo from '../../assets/video/home.mp4';
+import { useState } from 'react'
+
 
 const Home = ({ chosenAnimal, click, getPopUp }) => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+//toggle function
+  const toggleSidebar = () => {
+    setIsSidebarOpen(prev => !prev)
+  }
+
   return (
     <div className={styles.animalContainer}>
       <div className={styles.videoWrapper}>
@@ -19,22 +27,28 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
       </div>
 
       <div className={styles.main}>
+        <div className={`${styles.sidebarWrapper} ${isSidebarOpen} ? '' : styles.collapsed}`}>
         <SideBar
           animalArray={animalArray}
           press={click}
           selectedAnimal={chosenAnimal}
         />
+        <button onClick={toggleSidebar}>
+  
+        </button>
+        </div>
 
         <MainContent
           clickedAnimal={chosenAnimal}
           animalPopUp={getPopUp}
           defaultMessage={{
-            title: "Welcome to our Zoo!",
-            description: "Click on any animal to learn more.",
+            title: "Welcome to our FurFeathers & Scales!",
+            description: "Step right in and start your adventure through our zoo! 🦁 From majestic lions to playful penguins, there's so much to discover!.Click on any animal to learn more about their habitat, behaviors, and fun facts. Let the exploration begin! 🌍",
           }}
         />
       </div>
     </div>
+    
   );
 };
 
