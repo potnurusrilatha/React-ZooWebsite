@@ -3,7 +3,7 @@ import styles from '../../Animals/animals.module.css';
 import { animalArray } from '../../../data/animals';
 import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent';
-import birdsVideo from '../../../assets/video/birds.mp4';
+import birdsVideo from '../../../assets/video/Birds.mp4';
 import PopUp from '../../../components/PopUp';
 
 const Birds = () => {
