@@ -4,6 +4,7 @@ import SideBar from '../../components/SideBar';
 import MainContent from '../../components/MainContent';
 import homeVideo from '../../assets/video/Home.mp4';
 import { useState } from 'react';
+import BackgroundSlider from '../../components/BackgroundSlider';
 
 
 const Home = ({ chosenAnimal, click, getPopUp }) => {
@@ -14,6 +15,11 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
   }
 
   return (
+    <>
+    <div className={styles.homeWrapper}>
+      <div className={styles.sliderContainer}>
+        <BackgroundSlider />
+      </div>
     <div className={styles.animalContainer}>
       <div className={styles.videoWrapper}>
         <video
@@ -48,7 +54,8 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
         />
       </div>
     </div>
-    
+    </div>
+    </>
   );
 };
 

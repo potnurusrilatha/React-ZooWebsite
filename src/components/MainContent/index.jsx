@@ -1,7 +1,8 @@
-import React from 'react';
+
 // import { useLocation } from 'react-router-dom';
 import styles from './mainContent.module.css';
 import { getImageUrl } from '../../utils/function';
+
 
 const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
   // const { pathname } = useLocation();
@@ -29,9 +30,10 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
         <h1>{clickedAnimal.name}</h1>
         <div className={styles.animalDetailsContent}>
           <img src={getImageUrl(clickedAnimal.image)} alt={clickedAnimal.name} />
+          {/* <img src={getIconUrl(animal.icon)} alt={animal.name} /> */}
+          {/* console.log(getImageUrl(clickedAnimal.image)); */}
           <div className={styles.animalDetailsList}>
-            <p><span>Lifespan: </span>{clickedAnimal.lifespan}</p>
-            <p><span>Group: </span>{clickedAnimal.group}</p>
+            <p><span>Lifespan: </span>{clickedAnimal.lifeSpan}</p>
             <p><span>Food: </span>{clickedAnimal.food}</p>
             <p><span>Length: </span>{clickedAnimal.length}</p>
             <p><span>Weight: </span>{clickedAnimal.weight}</p>
@@ -39,6 +41,7 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
             <p><span>Src: </span>{clickedAnimal.src}</p>
             <p><span>GroupLink: </span>{clickedAnimal.groupLink}</p>
             <p><span>Icon: </span>{clickedAnimal.icon}</p>
+            <p><span>Group: </span>{clickedAnimal.group}</p>
           </div>
         
         </div>

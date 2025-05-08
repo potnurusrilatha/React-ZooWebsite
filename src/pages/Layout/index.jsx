@@ -1,17 +1,19 @@
-import Header from "../../components/Header"
-import Footer from "../../components/Footer"
-import { Outlet } from 'react-router-dom'
 
+import Header from '../../components/Header'
+import Footer from '../../components/Footer';
+import { Outlet } from 'react-router-dom';
+import './layout.css'; // If your styles are here
 
-
-const Layout = () => {
+const Layout = ({ getPopUp }) => {
   return (
-    <div>
+    <div className="pageContainer">
       <Header />
+      <main className="mainContent">
         <Outlet />
-      <Footer />
+      </main>
+      {!getPopUp && <Footer />}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

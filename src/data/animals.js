@@ -23,7 +23,7 @@ let mammalEchidna = new Animals("Mammals", "Echidna", 50, ["insects such as ants
 
 let mammalTasmanianDevil  = new Animals("Mammals", "Tasmanian Devil", 5, ["A predator", "eat meat from other animals such as wallabies and wombats"],
     "The Tasmanian devil (Sarcophilus harrisii) (palawa kani: purinina)[3] is a carnivorous marsupial of the family Dasyuridae. Until recently, it was only found on the island state of Tasmania, but it has been reintroduced to New South Wales in mainland Australia, with a small breeding population. The size of a small dog, the Tasmanian devil became the largest carnivorous marsupial in the world, following the extinction of the thylacine in 1936. It is related to quolls, and distantly related to the thylacine. It is characterised by its stocky and muscular build, black fur, pungent odour, extremely loud and disturbing screech, keen sense of smell, and ferocity when feeding. The Tasmanian devil's large head and neck allow it to generate among the strongest bites per unit body mass of any extant predatory land mammal. It hunts prey and scavenges on carrion.",
-    70, 10, "Tasmania",  "./images/Tasmanian Devil.jpg", 'Mammals', './html/mammals.html', 'tasmanian-devil.jpg', 'tasdevil.png');
+    70, 10, "Tasmania",  "./images/Tasmanian Devil.jpg", 'Mammals', './html/mammals.html', 'tasmanian devil.jpg', 'tasdevil.png');
 
 
 let mammalquokka  = new Animals("Mammals", "Quokka", 10, ["Plant eaters", " shrubs", "grasses"],
@@ -32,7 +32,7 @@ let mammalquokka  = new Animals("Mammals", "Quokka", 10, ["Plant eaters", " shru
 
 let reptileFrillNeckedLizard = new Animals("Reptiles","Frill-necked lizard", 20,["small insects", "spiders"], 
         "When this unique creature feels threatened, it rises on its hind legs, opens its yellow-coloured mouth, unfurls the colorful, pleated skin flap that encircles its head, and hisses. If an attacker is unintimidated by these antics, the lizard simply turns tail, mouth and frill open, and bolts, legs splaying left and right. It continues its deliberate run without stopping or looking back until it reaches the safety of a tree.",
-        90,1,"Northern  Austalia",  "./images/frilled_necked_lizard.jpg", 'Reptiles', './html/reptiles.html', 'frill_necked_lizard.jpg', 'frill-lizard.png');
+        90,1,"Northern  Austalia",  "./images/frill-necked lizard.jpg", 'Reptiles', './html/reptiles.html', 'Frill-necked lizard.jpg', 'frill-lizard.png');
    
 let reptileHawksbillTurtle = new Animals("Reptiles","Hawksbill Turtle", 50,["sponges", "jellyfish","seaplants"], 
     "The Hawksbill Sea Turtle gets its common name from the distinctive mouth, which resembles a bird’s beak. The shell, or carapace, is covered in large overlapping scutes, which are a distinctive brown/green/amber background with lighter brown streaks throughout. At the edge of the carapace they overlap in such a way as to form a serrated edge. The turtle has an elongated head and flippers which have two visible claws on the end. The flippers and head are covered in large green, brown or yellow scales. The average adult female weighs 50 kg and their carapace (shell) is approximately 80 cm in length",

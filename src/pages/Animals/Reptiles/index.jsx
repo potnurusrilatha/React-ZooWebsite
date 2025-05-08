@@ -49,7 +49,7 @@ const Reptiles = () => {
           animalPopUp={togglePopUp}
           defaultMessage={{
             title: "Welcome to the Reptiles Page!",
-            description: "Explore our collection of fascinating reptiles."
+            description: "Step into the realm of scales and cold-blooded creatures. Reptiles like snakes, lizards, and turtles have fascinating adaptations that have stood the test of time. Click to explore more!"
           }}
         />
       </div>

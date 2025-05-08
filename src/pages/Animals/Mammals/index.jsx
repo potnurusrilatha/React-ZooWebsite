@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import styles from '../../Animals/animals.module.css';
 import { animalArray } from '../../../data/animals'; 
 import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent'; 
 import mammalsvideo from '../../../assets/video/mammals.mp4';
 import PopUp from '../../../components/PopUp';
+// import BackgroundSlider from '../../../components/BackgroundSlider';
+
 
 const Mammals = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
@@ -22,6 +24,8 @@ const Mammals = () => {
   };
 
   return (
+    <>
+    
     <div className={styles.animalContainer}>
       <div className={styles.videoWrapper}>
         <video className={styles.backgroundMediaVideo}
@@ -43,41 +47,17 @@ const Mammals = () => {
           clickedAnimal={clickedAnimal} 
           animalPopUp={togglePopUp}
           defaultMessage={{
-            title: "Welcome to the Mammals page!",
-            description: "Enjoy browsing all our mammals."
+            title: "Welcome to the Fur page!",
+            description:  "Explore our fascinating furry friends—from mighty lions to tiny echidnas. Mammals are warm-blooded creatures with hair or fur, and they often care for their young. Click on any animal to learn more!"
           }} 
         />
       </div>
-{/* 
-      { Fullscreen Pop-Up for Animal Details }
 
-      {showPopUp && clickedAnimal && (
-        <div className={styles.fullscreenPopUp}>
-          <button className={styles.closeButton} onClick={togglePopUp}>Close</button>
-          <h1>{clickedAnimal.name}</h1>
-          <img src={clickedAnimal.image} alt={clickedAnimal.name} />
-          <p>{clickedAnimal.description}</p>
-          <ul>
-            <li><strong>Group:</strong> {clickedAnimal.group}</li>
-            <li><strong>Food:</strong> {clickedAnimal.food}</li>
-            <li><strong>Lifespan:</strong> {clickedAnimal.lifespan}</li>
-            <li><strong>Length:</strong> {clickedAnimal.length}</li>
-            <li><strong>Weight:</strong> {clickedAnimal.weight}</li>
-            <li><span>Place: </span>{clickedAnimal.place}</li>
-            <li><span>Src: </span>{clickedAnimal.src}</li>
-            <li><span>GroupLink: </span>{clickedAnimal.groupLink}</li>
-            <li><span>Icon: </span>{clickedAnimal.icon}</li>
-          </ul>
-        </div>
-      )}
-    </div> */}
-
-
-
-
+    
       {/* Conditionally render PopUp */}
       {showPopUp && <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />}
     </div>
+    </>
   );
 };
 

@@ -1,87 +1,85 @@
 .mainContent {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    min-height: 100vh;
-    margin-top:40px;
-  }
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  /* min-height: 100vh; */
+  margin-top:40px;
+}
   
-  /* Welcome Section */
-  .welcomeWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+.welcomeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
   
-  .welcome {
-    text-align: center;
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem;
-  }
+.welcome {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+}
   
-  .welcomeTitle {
-    font-size: 2rem;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-  }
+.welcomeTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
   
-  /* Animal Details Section */
-  .animalDetails {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+.animalDetails {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
   
-  .animalDetailsContent {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
+.animalDetailsContent {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
   
-  .animalDetailsContent img {
-    max-width: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
+.animalDetailsContent img {
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
   
-  .animalDetailsList {
-    flex: 1;
-  }
+.animalDetailsList {
+  flex: 1;
+}
   
-  .animalDetailsList p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-  }
+.animalDetailsList p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
   
-  .animalDetailsList span {
-    font-weight: bold;
-    color: #34495e;
-  }
+.animalDetailsList span {
+  font-weight: bold;
+  color: #34495e;
+}
   
-  .description {
-    margin-top: 1rem;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+.description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
   
-  .readMore {
-    margin-top: 1.5rem;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    background-color: #2980b9;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
+.readMore {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
   
-  .readMore:hover {
-    background-color: #1c6690;
-  }
+.readMore:hover {
+  background-color: #1c6690;
+}
   

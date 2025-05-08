@@ -1,4 +1,5 @@
 import styles from './popup.module.css';
+import { getImageUrl } from '../../utils/function';
 
 const PopUp = ({ chosenAnimal, closePopUp }) => {
   if (!chosenAnimal) return null;
@@ -8,11 +9,11 @@ const PopUp = ({ chosenAnimal, closePopUp }) => {
       <div className={styles.popupCard}>
         <button className={styles.closeButton} onClick={closePopUp}>✖ Close</button>
         <h2>{chosenAnimal.title || chosenAnimal.name}</h2>
-        <img src={chosenAnimal.image} alt={chosenAnimal.name} className={styles.image} />
+        <img src={getImageUrl(chosenAnimal.image)} alt={chosenAnimal.name} className={styles.image} />
         
         <div className={styles.animalDetails}>
           <div className={styles.animalDetailsContent}>
-            <img src={chosenAnimal.image} alt={chosenAnimal.name} />
+            {/* <img src={getImageUrl(clickedAnimal.image)} alt={clickedAnimal.name} /> */}
             <div className={styles.animalDetailsList}>
               <p><span>Lifespan: </span>{chosenAnimal.lifespan}</p>
               <p><span>Group: </span>{chosenAnimal.group}</p>

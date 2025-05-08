@@ -44,7 +44,7 @@ const Birds = () => {
           animalPopUp={togglePopUp}       
           defaultMessage={{
             title: "Welcome to the Feathers Page!",
-            description: "Explore our collection of fascinating birds."
+            description:"Discover the world of feathers and flight. From colorful parrots to powerful eagles, our bird collection showcases the beauty and diversity of avian life. Click an animal to learn more!"
           }}
         />
       </div>
