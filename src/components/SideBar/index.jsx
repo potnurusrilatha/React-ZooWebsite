@@ -4,7 +4,7 @@ import { getIconUrl } from '../../utils/function';
 
 const SideBar = ({ animalArray, press, groupPage, selectedAnimal }) => {
   const [isOpen, setIsOpen] = useState(true);
-  const [hoveredIndex, setHoveredIndex] = useState(null); // fix here
+  const [hoveredIndex, setHoveredIndex] = useState(null); 
 
   const toggleSidebar = () => {
     setIsOpen(prev => !prev);
@@ -32,7 +32,7 @@ const SideBar = ({ animalArray, press, groupPage, selectedAnimal }) => {
              key={index}
              className={`${styles.sidebarListItem} 
                ${hoveredIndex === index ? styles.active : ''}
-               ${selectedAnimal?.name === animal.name ? styles.selected : ''}`} // Add selected class
+               ${selectedAnimal?.name === animal.name ? styles.selected : ''}`} 
              onMouseEnter={() => setHoveredIndex(index)}
              onMouseLeave={() => setHoveredIndex(null)}
            >
@@ -41,7 +41,7 @@ const SideBar = ({ animalArray, press, groupPage, selectedAnimal }) => {
               </span>
               <span
                 className={styles.name}
-                onClick={() => press(animal)} // Pass the clicked animal to the press function
+                onClick={() => press(animal)} 
               >
                 {animal.name}
               </span>

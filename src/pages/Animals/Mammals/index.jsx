@@ -4,20 +4,20 @@ import { animalArray } from '../../../data/animals';
 import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent'; 
 import mammalsvideo from '../../../assets/video/mammals.mp4';
-import PopUp from '../../../components/PopUp';
 
 const Mammals = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
   const [showPopUp, setShowPopUp] = useState(false);
 
-  // Function to handle animal click
   const chooseAnimal = (animal) => {
-    setClickedAnimal(animal);
+    // Clicking again toggles back to welcome view
+    setClickedAnimal((prev) => (prev?.name === animal.name ? null : animal));
+    setShowPopUp(false); // Always close popup when selecting
   };
 
-  // Function to toggle the pop-up visibility
   const togglePopUp = () => {
-    setShowPopUp(prev => !prev); 
+    console.log('Read More clicked');
+    setShowPopUp(prev => !prev);
   };
 
   return (
@@ -30,19 +30,16 @@ const Mammals = () => {
           type="video/mp4" />
         <h1 className={styles.homeTitle}>Welcome to Fur</h1>
       </div>
-      <div className={styles.main}>
 
-        {/* Sidebar will handle selecting an animal */}
-        
+      <div className={styles.main}>
         <SideBar 
           animalArray={animalArray.filter(animal => animal.group === 'Mammals')} 
           press={chooseAnimal} 
         />
 
-        {/* Main content will display selected animal details or welcome message */}
         <MainContent 
           clickedAnimal={clickedAnimal} 
-          animalPopUp={togglePopUp}  
+          animalPopUp={togglePopUp} // ✅ Now Read More button works
           defaultMessage={{
             title: "Welcome to the Mammals page!",
             description: "Enjoy browsing all our mammals."
@@ -50,8 +47,23 @@ const Mammals = () => {
         />
       </div>
 
-      {/* Conditionally render PopUp */}
-      {showPopUp && <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />}
+      {/* ✅ Fullscreen Pop-Up for Animal Details */}
+      {showPopUp && clickedAnimal && (
+        <div className={styles.fullscreenPopUp}>
+          <button className={styles.closeButton} onClick={togglePopUp}>Close</button>
+          <h1>{clickedAnimal.name}</h1>
+          <img src={clickedAnimal.image} alt={clickedAnimal.name} />
+          <p>{clickedAnimal.description}</p>
+          <ul>
+            <li><strong>Group:</strong> {clickedAnimal.group}</li>
+            <li><strong>Food:</strong> {clickedAnimal.food}</li>
+            <li><strong>Lifespan:</strong> {clickedAnimal.lifespan}</li>
+            <li><strong>Length:</strong> {clickedAnimal.length}</li>
+            <li><strong>Weight:</strong> {clickedAnimal.weight}</li>
+            <li><strong>Habitat:</strong> {clickedAnimal.habitat}</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

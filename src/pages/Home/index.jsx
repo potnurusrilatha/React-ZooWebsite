@@ -1,14 +1,14 @@
-import styles from '../Animals/animals.module.css';
+import styles from '../Home/home.module.css';
 import { animalArray } from '../../data/animals';
 import SideBar from '../../components/SideBar';
 import MainContent from '../../components/MainContent';
 import homeVideo from '../../assets/video/Home.mp4';
-import { useState } from 'react'
+import { useState } from 'react';
 
 
 const Home = ({ chosenAnimal, click, getPopUp }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-//toggle function
+
   const toggleSidebar = () => {
     setIsSidebarOpen(prev => !prev)
   }
@@ -43,7 +43,7 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
           animalPopUp={getPopUp}
           defaultMessage={{
             title: "Welcome to our FurFeathers & Scales!",
-            description: "Step right in and start your adventure through our zoo! 🦁 From majestic lions to playful penguins, there's so much to discover!.Click on any animal to learn more about their habitat, behaviors, and fun facts. Let the exploration begin! 🌍",
+            description: "Step right in and start your adventure through our zoo!  From majestic lions to playful penguins, there's so much to discover!.Click on any animal to learn more about their habitat, behaviors, and fun facts. Let the exploration begin!",
           }}
         />
       </div>
