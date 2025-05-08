@@ -21,12 +21,14 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
   }
 
   return (
+    <>
+   
     <div className={styles.card}>
       <p>{clickedAnimal.shortDescription}</p>
       <div className={styles.animalDetails}>
         <h1>{clickedAnimal.name}</h1>
         <div className={styles.animalDetailsContent}>
-          <img src={clickedAnimal.image} alt={clickedAnimal.name} />
+          <img src={getImageUrl(clickedAnimal.image)} alt={clickedAnimal.name} />
           <div className={styles.animalDetailsList}>
             <p><span>Lifespan: </span>{clickedAnimal.lifespan}</p>
             <p><span>Group: </span>{clickedAnimal.group}</p>
@@ -38,7 +40,9 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
             <p><span>GroupLink: </span>{clickedAnimal.groupLink}</p>
             <p><span>Icon: </span>{clickedAnimal.icon}</p>
           </div>
+        
         </div>
+       
         {showReadMore && (
         <button
           className={styles.readMore}
@@ -47,11 +51,13 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
           Read More
         </button>
       )}
+       </div> 
         
       </div>
-
       
-    </div>
+      
+   
+  </>
   );
 };
 

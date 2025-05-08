@@ -4,6 +4,7 @@ import { animalArray } from '../../../data/animals';
 import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent'; 
 import mammalsvideo from '../../../assets/video/mammals.mp4';
+import PopUp from '../../../components/PopUp';
 
 const Mammals = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
@@ -26,6 +27,7 @@ const Mammals = () => {
         <video className={styles.backgroundMediaVideo}
           src={mammalsvideo} 
           autoPlay 
+          loop
           muted
           type="video/mp4" />
         <h1 className={styles.homeTitle}>Welcome to Fur</h1>
@@ -46,8 +48,8 @@ const Mammals = () => {
           }} 
         />
       </div>
-
-      {/* Fullscreen Pop-Up for Animal Details */}
+{/* 
+      { Fullscreen Pop-Up for Animal Details }
 
       {showPopUp && clickedAnimal && (
         <div className={styles.fullscreenPopUp}>
@@ -68,6 +70,13 @@ const Mammals = () => {
           </ul>
         </div>
       )}
+    </div> */}
+
+
+
+
+      {/* Conditionally render PopUp */}
+      {showPopUp && <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />}
     </div>
   );
 };

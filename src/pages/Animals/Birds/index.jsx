@@ -26,6 +26,7 @@ const Birds = () => {
         <video className={styles.backgroundMediaVideo}
           src={birdsVideo} 
           autoPlay 
+          loop
           muted
           type="video/mp4" />
         <h1 className={styles.homeTitle}>Welcome to the Feathers</h1>
