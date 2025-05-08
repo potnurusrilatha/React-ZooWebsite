@@ -12,7 +12,7 @@ const Mammals = () => {
   const chooseAnimal = (animal) => {
     // Clicking again toggles back to welcome view
     setClickedAnimal((prev) => (prev?.name === animal.name ? null : animal));
-    setShowPopUp(false); // Always close popup when selecting
+    setShowPopUp(false); 
   };
 
   const togglePopUp = () => {
@@ -39,7 +39,7 @@ const Mammals = () => {
 
         <MainContent 
           clickedAnimal={clickedAnimal} 
-          animalPopUp={togglePopUp} // ✅ Now Read More button works
+          animalPopUp={togglePopUp}
           defaultMessage={{
             title: "Welcome to the Mammals page!",
             description: "Enjoy browsing all our mammals."
@@ -47,7 +47,8 @@ const Mammals = () => {
         />
       </div>
 
-      {/* ✅ Fullscreen Pop-Up for Animal Details */}
+      {/* Fullscreen Pop-Up for Animal Details */}
+
       {showPopUp && clickedAnimal && (
         <div className={styles.fullscreenPopUp}>
           <button className={styles.closeButton} onClick={togglePopUp}>Close</button>
