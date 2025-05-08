@@ -61,7 +61,10 @@ const Mammals = () => {
             <li><strong>Lifespan:</strong> {clickedAnimal.lifespan}</li>
             <li><strong>Length:</strong> {clickedAnimal.length}</li>
             <li><strong>Weight:</strong> {clickedAnimal.weight}</li>
-            <li><strong>Habitat:</strong> {clickedAnimal.habitat}</li>
+            <li><span>Place: </span>{clickedAnimal.place}</li>
+            <li><span>Src: </span>{clickedAnimal.src}</li>
+            <li><span>GroupLink: </span>{clickedAnimal.groupLink}</li>
+            <li><span>Icon: </span>{clickedAnimal.icon}</li>
           </ul>
         </div>
       )}

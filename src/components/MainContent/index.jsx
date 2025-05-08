@@ -33,7 +33,10 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
             <p><span>Food: </span>{clickedAnimal.food}</p>
             <p><span>Length: </span>{clickedAnimal.length}</p>
             <p><span>Weight: </span>{clickedAnimal.weight}</p>
-            <p><span>Habitat: </span>{clickedAnimal.habitat}</p>
+            <p><span>Place: </span>{clickedAnimal.place}</p>
+            <p><span>Src: </span>{clickedAnimal.src}</p>
+            <p><span>GroupLink: </span>{clickedAnimal.groupLink}</p>
+            <p><span>Icon: </span>{clickedAnimal.icon}</p>
           </div>
         </div>
         {showReadMore && (
@@ -44,7 +47,7 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
           Read More
         </button>
       )}
-       
+        
       </div>
 
       
