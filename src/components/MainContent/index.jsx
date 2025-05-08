@@ -4,7 +4,7 @@ import styles from './mainContent.module.css';
 
 const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
   // const { pathname } = useLocation();
-  const showReadMore = true; // Always show Read More button
+  const showReadMore = true; 
 
   if (!clickedAnimal) {
     return (
@@ -41,7 +41,7 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
       {showReadMore && (
         <button
           className={styles.readMore}
-          onClick={animalPopUp} // Trigger the pop-up when clicked
+          onClick={animalPopUp} 
         >
           Read More
         </button>
