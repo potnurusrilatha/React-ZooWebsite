@@ -1,6 +1,7 @@
 import React from 'react';
 // import { useLocation } from 'react-router-dom';
 import styles from './mainContent.module.css';
+import { getImageUrl } from '../../utils/function';
 
 const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
   // const { pathname } = useLocation();
@@ -35,10 +36,7 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
             <p><span>Habitat: </span>{clickedAnimal.habitat}</p>
           </div>
         </div>
-        <div className={styles.description}>{clickedAnimal.description}</div>
-      </div>
-
-      {showReadMore && (
+        {showReadMore && (
         <button
           className={styles.readMore}
           onClick={animalPopUp} 
@@ -46,6 +44,10 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
           Read More
         </button>
       )}
+       
+      </div>
+
+      
     </div>
   );
 };
