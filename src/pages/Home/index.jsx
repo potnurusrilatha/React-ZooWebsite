@@ -17,19 +17,19 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
   return (
     <>
     <div className={styles.homeWrapper}>
-      <div className={styles.sliderContainer}>
-        <BackgroundSlider />
-      </div>
-    <div className={styles.animalContainer}>
+    
+      <div className={styles.overlay}>
+    {/* <div className={styles.animalContainer}> */}
       <div className={styles.videoWrapper}>
-        <video
+         <video
           className={styles.backgroundMediaVideo}
           src={homeVideo}
           autoPlay
           muted
           loop
-        />
+        /> 
         <h1 className={styles.homeTitle}>Welcome to the Zoo</h1>
+      </div>
       </div>
 
       <div className={styles.main}>
@@ -44,6 +44,7 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
         </button>
         </div>
 
+<div className={styles.sliderContainer}></div>
         <MainContent
           clickedAnimal={chosenAnimal}
           animalPopUp={getPopUp}
@@ -51,10 +52,15 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
             title: "Welcome to our FurFeathers & Scales!",
             description: "Step right in and start your adventure through our zoo!  From majestic lions to playful penguins, there's so much to discover!.Click on any animal to learn more about their habitat, behaviors, and fun facts. Let the exploration begin!",
           }}
+            
+       
+    
         />
-      </div>
+         <BackgroundSlider />
+          </div>
+     
     </div>
-    </div>
+    {/* </div> */}
     </>
   );
 };

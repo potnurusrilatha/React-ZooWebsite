@@ -1,5 +1,6 @@
 import styles from './popup.module.css';
 import { getImageUrl } from '../../utils/function';
+import { NavLink } from 'react-router-dom';
 
 const PopUp = ({ chosenAnimal, closePopUp }) => {
   if (!chosenAnimal) return null;
@@ -22,7 +23,8 @@ const PopUp = ({ chosenAnimal, closePopUp }) => {
               <p><span>Weight: </span>{chosenAnimal.weight}</p>
               <p><span>Place: </span>{chosenAnimal.place}</p>
               <p><span>Src: </span>{chosenAnimal.src}</p>
-              <p><span>GroupLink: </span>{chosenAnimal.groupLink}</p>
+              <p><span>GroupLink: </span><NavLink to = {`/${chosenAnimal.group.toLowerCase()}`} >{chosenAnimal.groupLink}</NavLink>
+              </p>
               <p><span>Icon: </span>{chosenAnimal.icon}</p>
               <p className={styles.description}>{chosenAnimal.description}</p>
             </div>

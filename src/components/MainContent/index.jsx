@@ -2,6 +2,7 @@
 // import { useLocation } from 'react-router-dom';
 import styles from './mainContent.module.css';
 import { getImageUrl } from '../../utils/function';
+import { NavLink } from 'react-router-dom';
 
 
 const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
@@ -39,7 +40,8 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
             <p><span>Weight: </span>{clickedAnimal.weight}</p>
             <p><span>Place: </span>{clickedAnimal.place}</p>
             <p><span>Src: </span>{clickedAnimal.src}</p>
-            <p><span>GroupLink: </span>{clickedAnimal.groupLink}</p>
+            <p><span>GroupLink: </span><NavLink to = {`/${clickedAnimal.group.toLowerCase()}`} >{clickedAnimal.group}</NavLink>
+              </p>
             <p><span>Icon: </span>{clickedAnimal.icon}</p>
             <p><span>Group: </span>{clickedAnimal.group}</p>
           </div>
