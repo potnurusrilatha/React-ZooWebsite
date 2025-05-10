@@ -5,9 +5,8 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
             <div className={styles.footerContent}>
-                <div>
-                    <h3>FurFeathers & Scales</h3>
-                    
+                <div className={styles.footerContentHeader}>
+                    <h3>FurFeathers & Scales</h3>  
                 </div>
                 <div className={styles.socialSection}>
                     <h3>Follow Us</h3>

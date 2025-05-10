@@ -1,9 +1,10 @@
 import logo from '../../assets/logo.png'
+import styles from '../Logo'
 
 
 const Logo = () => {
   return (
-    <div>
+    <div className={styles.Logowrap}>
       <img src={logo} alt={logo} height={70} />
     </div>
   )

@@ -1,11 +1,10 @@
 .footer {
     background-color: black;
     color: white;
-    padding: 40px 20px 20px;
-    margin-top: 60px;
+    /* padding: 40px 20px 20px;
+    margin-top: 60px; */
     font-family: 'Inter', sans-serif;
     position: relative;
-    margin-top: 2rem;
 }
 
 .footerContent {
@@ -18,21 +17,29 @@
 }
 
 .footerContent > div {
-    flex: 1;
+    /* flex: 1; */
     min-width: 250px;
     margin: 10px;
 }
 
-.footerSection {
-    flex: 1 1 100px;
-    max-width: 200px;
-}
-
+.footerSection h1,
 .footerSection h3,
-.footerSection h4 {
+.footerSection h4,
+.footerContentHeader h3,
+.socialSection h3 {
+    font-size: 24px;
     margin-bottom: 15px;
     font-weight: bold;
 }
+
+.footerSection p {
+    font-size: 14px;
+}
+
+/* .socialSection {
+  display: flex;
+  flex-direction: column;
+} */
 
 .socialLinks {
     display: flex;

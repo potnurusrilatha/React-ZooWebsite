@@ -24,7 +24,7 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
 
   return (
     <>
-   
+   <div className={styles.mainContent}>
     <div className={styles.card}>
       <p>{clickedAnimal.shortDescription}</p>
       <div className={styles.animalDetails}>
@@ -60,7 +60,7 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
         
       </div>
       
-      
+      </div>
    
   </>
   );

@@ -17,12 +17,12 @@ const SideBar = ({ animalArray, press, groupPage, selectedAnimal }) => {
 
   return (
     <>
-      {/* Toggle Button */}
-      <div className={`${styles.toggleButtonWrapper} ${!isOpen ? styles.closed : ''}`}>
-        <button className={styles.toggleButton} onClick={toggleSidebar}>
-          <div className={`${styles.arrow} ${isOpen ? styles.left : styles.right}`}></div>
-        </button>
-      </div>
+       {/* Toggle Button */}
+       <div className={`${styles.toggleButtonWrapper} ${!isOpen ? styles.closed : ''}`}>
+          <button className={styles.toggleButton} onClick={toggleSidebar}>
+            <div className={`${styles.arrow} ${isOpen ? styles.left : styles.right}`}></div>
+          </button> 
+       </div>  
 
       {/* Sidebar */}
       <div className={`${styles.sidebar} ${isOpen ? styles.sidebarOpen : styles.sidebarClosed}`}>

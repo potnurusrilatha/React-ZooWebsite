@@ -1,0 +1,11 @@
+.Logowrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+}
+
+img {
+  max-height: 100%;
+  width: auto; 
+}

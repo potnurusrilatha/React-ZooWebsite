@@ -28,6 +28,22 @@
   animation: fadeInUp 0.3s ease-out;
 }
 
+.animalDetailsList p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.4rem;
+}
+
+.animalDetailsList span {
+  font-weight: 600;
+  color: #222;
+  margin-right: 0.3rem;
+}
+
+
 .image {
   width: 100%;
   max-height: 400px;
@@ -57,7 +73,7 @@
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 24px;
-  color: #333;
+  color: white;
 }
 
 .popupBox p {
@@ -82,5 +98,49 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .popupCard {
+    width: 95%;
+    padding: 16px;
+    max-height: 80vh;
+    font-size: 0.95rem;
+  }
+
+  .image {
+    max-height: 250px;
+  }
+
+  .closeButton {
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .popupBox p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .popupCard {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .image {
+    max-height: 200px;
+    border-radius: 8px;
+  }
+
+  .closeButton {
+    font-size: 18px;
+  }
+
+  .popupBox p {
+    font-size: 13px;
   }
 }
