@@ -10,7 +10,6 @@ const SideBar = ({ animalArray, press, groupPage, selectedAnimal }) => {
     setIsOpen(prev => !prev);
   };
 
-  // Filter animals based on the current group page
   const filteredAnimals = groupPage
     ? animalArray.filter(animal => animal.group === groupPage)
     : animalArray;
