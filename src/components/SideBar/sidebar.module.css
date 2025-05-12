@@ -111,7 +111,7 @@
   border-radius: 4px;
 }
 
-@media only screen and(max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .sidebar {
     width: 80%;            
     height: 100%;           

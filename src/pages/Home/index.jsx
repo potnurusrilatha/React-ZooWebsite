@@ -53,8 +53,6 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
             title: "Welcome to our FurFeathers & Scales!",
             description: "Step right in and start your adventure through our zoo!  From majestic lions to playful penguins, there's so much to discover!.Click on any animal to learn more about their habitat, behaviors, and fun facts. Let the exploration begin! Step right in and start your adventure through our zoo!  From majestic lions to playful penguins, there's so much to discover!.Click on any animal to learn more about their habitat, behaviors, and fun facts. Let the exploration begin!",
           }}
-            
-       
     
         />
          <BackgroundSlider />

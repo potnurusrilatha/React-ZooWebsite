@@ -1,4 +1,25 @@
-Header component:
+React - Zoo Website Plan
+
+1. Project Setup
+   - Create React project using Vite
+   - Install required dependencies (react-router-dom)
+      -  installed phosphor-Icons for icons
+   - Set up project structure
+   - Initialize Git repository
+
+2. Data Structure Setup
+   - Create animals.js data file
+   - Structure animal data with:
+     * name
+     * image
+     * description
+     * group (mammal/bird/reptile)
+     * additional details
+   
+
+3. add images
+
+4.Header component:
  Desktop:
     logo component
         image
@@ -7,4 +28,45 @@ Header component:
         NavItem component
  Mobile:
     MobileNavigation component
-        
+5.Sidebar: props{ animalArray, press, grouppage, selectedAnimal}
+    -->tooglebutton (arrow)
+    --> with all the animals --> map through the animals to get the names to show
+    onclick show short summary on MainContent
+
+
+6. MainContent
+        page load --> welcome message
+        if clickedAnimal --> short summary (img, name, small description, diet, 
+        group with link to group page, read more button)
+            read more button --> pop up fills the entire page exp header, full 
+            description, close button
+        toggle show welcome message again
+7. Popupcomponent with full details of the animal
+
+8.Backgroundslider: sate: index, setIndex = useState(0);
+i want to change slider for 4s so useeffect
+
+9. set the routerspath in app.jsx
+
+10. Homepage: need to display the need props (chosenAnimal, click, getPopUp)
+    state: isSidebarOpen, setIsSidebarOpen = useState(true);
+    i want to play all the images in the background so i want component Backgroundslider component
+
+
+11.created Animal component in that i called 3 animals names as
+Animals:Mammals , Birds, Reptiles
+i want to put the video for every animal page and 
+    Sidebar
+        animals of that group only
+            filter the group 
+            map through the names in it
+
+    I want two state for each animal to click the animalname with details  and to show the popcard       
+        -->const [clickedAnimal, setClickedAnimal] = useState(null);
+        -->const [showPopUp, setShowPopUp] = useState(false);
+
+        !showPopUp ? <sidebar>
+       Function to toggle the pop-up visibility
+
+       
+10.footer component 

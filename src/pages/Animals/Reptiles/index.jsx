@@ -14,12 +14,14 @@ const Reptiles = () => {
   // Function to handle animal click
   const chooseAnimal = (animal) => {
     setClickedAnimal(animal);
+    setShowPopUp(false);
     // setShowPopUp(true)
   };
 
   // Function to toggle the pop-up visibility
   const togglePopUp = () => {
     setShowPopUp(prev => !prev); 
+    // setClickedAnimal(null);
   };
 
   return (
@@ -32,7 +34,8 @@ const Reptiles = () => {
                           type="video/mp4" />
         <h1 className={styles.homeTitle}>Welcome to Scales </h1>
       </div>
-      <div className={styles.main}>
+      {!showPopUp && <div className={styles.main}>
+        
 
         {/* Sidebar will handle selecting an animal */}
 
@@ -52,7 +55,8 @@ const Reptiles = () => {
             description: "Step into the realm of scales and cold-blooded creatures. Reptiles like snakes, lizards, and turtles have fascinating adaptations that have stood the test of time. Click to explore more!"
           }}
         />
-      </div>
+      </div>}
+      
       {/* Conditionally render PopUp */}
       {showPopUp && <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />}
     </div>
@@ -60,3 +64,4 @@ const Reptiles = () => {
 };
 
 export default Reptiles;
+

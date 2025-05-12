@@ -23,34 +23,38 @@ const Birds = () => {
   return (
     <div className={styles.animalContainer}>
       <div className={styles.videoWrapper}>
-        <video className={styles.backgroundMediaVideo}
-          src={birdsVideo} 
-          autoPlay 
-          loop
+        <video
+          className={styles.backgroundMediaVideo}
+          src={birdsVideo}
+          autoPlay
           muted
-          type="video/mp4" />
+          type="video/mp4"
+        />
         <h1 className={styles.homeTitle}>Welcome to the Feathers</h1>
       </div>
-      <div className={styles.main}>
-        {/* Sidebar will handle selecting an animal */}
-        <SideBar
-          animalArray={animalArray.filter(animal => animal.group === 'Birds')}
-          press={chooseAnimal}
-        />
-
-        {/* Main content will display selected animal details or welcome message */}
-        <MainContent
-          clickedAnimal={clickedAnimal}  
-          animalPopUp={togglePopUp}       
-          defaultMessage={{
-            title: "Welcome to the Feathers Page!",
-            description:"Discover the world of feathers and flight. From colorful parrots to powerful eagles, our bird collection showcases the beauty and diversity of avian life. Click an animal to learn more!"
-          }}
-        />
-      </div>
-
-      {/* Conditionally render PopUp */}
-      {showPopUp && <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />}
+      {!showPopUp ? (
+        <div className={styles.main}>
+          {/* Sidebar will handle selecting an animal */}
+          <SideBar
+            animalArray={animalArray.filter(
+              animal => animal.group === "Birds"
+            )}
+            press={chooseAnimal}
+          />
+ 
+          {/* Main content will display selected animal details or welcome message */}
+          <MainContent
+            clickedAnimal={clickedAnimal}
+            animalPopUp={togglePopUp}
+            defaultMessage={{
+              title: "Welcome to the Feathers Page!",
+              description: "Take flight into the fascinating world of birds! From soaring eagles to tiny hummingbirds, these feathered creatures are masters of the skies, known for their songs, colors, and incredible migrations."
+            }}
+          />
+        </div>
+      ) : (
+        <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />
+      )}
     </div>
   );
 };
