@@ -34,15 +34,14 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
       </div>
 
       <div className={styles.main}>
-        <div className={`${styles.sidebarWrapper} ${isSidebarOpen} ? '' : styles.collapsed}`}>
+        <div className={`${styles.sidebarWrapper} ${isSidebarOpen} ? '' : ${styles.collapsed}`}>
+      
         <SideBar
           animalArray={animalArray}
           press={click}
           selectedAnimal={chosenAnimal}
         />
-        <button onClick={toggleSidebar}>
-  
-        </button>
+      
         </div>
 
 <div className={styles.sliderContainer}></div>
