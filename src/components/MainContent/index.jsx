@@ -1,12 +1,9 @@
-
-// import { useLocation } from 'react-router-dom';
 import styles from './mainContent.module.css';
 import { getImageUrl } from '../../utils/function';
 import { NavLink } from 'react-router-dom';
 
 
 const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
-  // const { pathname } = useLocation();
   const showReadMore = true; 
 
   if (!clickedAnimal) {
@@ -31,8 +28,6 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
         <h1>{clickedAnimal.name}</h1>
         <div className={styles.animalDetailsContent}>
           <img src={getImageUrl(clickedAnimal.image)} alt={clickedAnimal.name} />
-          {/* <img src={getIconUrl(animal.icon)} alt={animal.name} /> */}
-          {/* console.log(getImageUrl(clickedAnimal.image)); */}
           <div className={styles.animalDetailsList}>
             <p><span>Lifespan: </span>{clickedAnimal.lifeSpan}</p>
             <p><span>Food: </span>{clickedAnimal.food}</p>

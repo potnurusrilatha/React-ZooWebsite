@@ -12,7 +12,7 @@ const BackgroundSlider = () => {
       setIndex((prevIndex) =>
         prevIndex === animalArray.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // change every 4 seconds
+    }, 4000); 
     return () => clearInterval(interval);
   }, []);
 

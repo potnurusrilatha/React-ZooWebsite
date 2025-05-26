@@ -11,16 +11,14 @@ import BackgroundSlider from '../../components/BackgroundSlider';
 const Home = ({ chosenAnimal, click, getPopUp }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  const toggleSidebar = () => {
+   const toggleSidebar = () => {
     setIsSidebarOpen(prev => !prev)
   }
 
   return (
     <>
     <div className={styles.homeWrapper}>
-    
       <div className={styles.overlay}>
-    {/* <div className={styles.animalContainer}> */}
       <div className={styles.videoWrapper}>
          <video
           className={styles.backgroundMediaVideo}
@@ -34,17 +32,16 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
       </div>
 
       <div className={styles.main}>
-        <div className={`${styles.sidebarWrapper} ${isSidebarOpen} ? '' : ${styles.collapsed}`}>
+        <div className={`${styles.sidebarWrapper} ${isSidebarOpen ? '' : styles.collapsed}`}>
       
         <SideBar
           animalArray={animalArray}
           press={click}
           selectedAnimal={chosenAnimal}
         />
-      
         </div>
 
-<div className={styles.sliderContainer}></div>
+      <div className={styles.sliderContainer}></div>
         <MainContent
           clickedAnimal={chosenAnimal}
           animalPopUp={getPopUp}
