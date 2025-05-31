@@ -3,6 +3,7 @@ import styles from '../navigation.module.css'
   import { XCircle, List} from "@phosphor-icons/react";
   import NavigationItem from '../NavigationItem';
   import { useState } from 'react';
+
   
   const MobileNav = () => {
         const [isOpen, setIsOpen] = useState(false);
@@ -16,17 +17,20 @@ import styles from '../navigation.module.css'
                 <XCircle size={32}  onClick = {() => setIsOpen(false)}/>
             )}
             </div>
-            {isOpen && (
-              <div  className={`{styles.mobileMenuContent} ${isOpen ? styles.showMenu : styles.hideMenu}`}>
-                {pages.map((item, index) => (<NavigationItem key={index} name={item}  handleClose= {() => setIsOpen(false)}/>))} 
-              </div>
-            )}
+           {isOpen && (
+  <div className={`${styles.mobileMenuContent} ${isOpen ? styles.showMenu : styles.hideMenu}`}>
+    {pages.map((item, index) => (
+      <div key={index} className={styles.navCard}>
+        <NavigationItem name={item} handleClose={() => setIsOpen(false)} />
+      </div>
+    ))}
+  </div>
+)}
+</div>
+  )
+    }
 
-          </div>
-      )
-  }
-  
-  
 
 
-export default MobileNav
+
+export default MobileNav;

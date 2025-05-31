@@ -9,21 +9,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
     z-index: 1000;
     border-bottom: 1px solid #000;
 }
 
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+   
+}
 .menuItem { 
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     text-decoration: none;
-    color: white;
     font-weight: 500;
     transition: background-color 0.2s ease;
     visibility: visible;
-    
 }
 
 .menuItem::after {
@@ -42,22 +46,15 @@
 } 
 
 .mobileMenuContent {
-    background-color: brown;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100vw;
+    left: 100;
     background-color: white;
-    color: white;
     transition: all 0.3s ease-in-out;
-    padding: 1rem 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 999;
     opacity: 0;
     transform: translateY(-10px);
-    visibility: hidden;
-    pointer-events: none;
-  
 }
 
  .mobileMenuContent.active {
@@ -68,24 +65,37 @@
     left: -100%;
 }
 
-
-/*.mobileMenuContent .menuItem {
-    padding: 8px;
-} */
-
 .showMenu {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
     pointer-events: auto;
-  }
+}
   
-  .hideMenu {
+.hideMenu {
     opacity: 0;
     transform: translateY(-10px);
     visibility: hidden;
     pointer-events: none;
-  }
+}
+
+.navCard {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    margin: 12px;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer; 
+}
+
+.navCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
 
 @keyframes slideDown {
     from {
