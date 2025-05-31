@@ -11,41 +11,38 @@ const Reptiles = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
   const [showPopUp, setShowPopUp] = useState(false);
 
-  // Function to handle animal click
+
   const chooseAnimal = (animal) => {
     setClickedAnimal(animal);
     setShowPopUp(false);
-    // setShowPopUp(true)
+   
   };
 
-  // Function to toggle the pop-up visibility
+  
   const togglePopUp = () => {
     setShowPopUp(prev => !prev); 
-    // setClickedAnimal(null);
+   
   };
 
   return (
     <div className={styles.animalContainer}>
       <div className={styles.videoWrapper}>
-                      <video className={styles.backgroundMediaVideo}
-                          src={reptilesvideo} 
-                          autoPlay 
-                          muted
-                          type="video/mp4" />
+          <video className={styles.backgroundMediaVideo}
+          src={reptilesvideo} 
+          autoPlay 
+          muted
+          loop
+          playsInline
+          type="video/mp4" />
         <h1 className={styles.homeTitle}>Welcome to Scales </h1>
       </div>
       {!showPopUp && <div className={styles.main}>
         
-
-        {/* Sidebar will handle selecting an animal */}
-
       <SideBar
           animalArray={animalArray.filter(animal => animal.group === 'Reptiles')}
           press={chooseAnimal}
           selectedAnimal={clickedAnimal}
         />
-
-    {/* Main content will display selected animal details or welcome message */}
 
         <MainContent
           clickedAnimal={clickedAnimal}
@@ -57,7 +54,6 @@ const Reptiles = () => {
         />
       </div>}
       
-      {/* Conditionally render PopUp */}
       {showPopUp && <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />}
     </div>
   );

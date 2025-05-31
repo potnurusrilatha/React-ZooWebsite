@@ -12,7 +12,7 @@ const Mammals = () => {
 
   const chooseAnimal = (animal) => {
     setClickedAnimal(animal);
-    setShowPopUp(true); // directly show popup on click
+  
   };
 
   const togglePopUp = () => {

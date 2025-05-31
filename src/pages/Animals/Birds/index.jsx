@@ -10,12 +10,12 @@ const Birds = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
   const [showPopUp, setShowPopUp] = useState(false);
 
-  // Function to handle animal click
+ 
   const chooseAnimal = (animal) => {
     setClickedAnimal(animal);
   };
 
-  // Function to toggle the pop-up visibility
+ 
   const togglePopUp = () => {
     setShowPopUp(prev => !prev); 
   };
@@ -34,7 +34,7 @@ const Birds = () => {
       </div>
       {!showPopUp ? (
         <div className={styles.main}>
-          {/* Sidebar will handle selecting an animal */}
+          
           <SideBar
             animalArray={animalArray.filter(
               animal => animal.group === "Birds"
@@ -42,7 +42,7 @@ const Birds = () => {
             press={chooseAnimal}
           />
  
-          {/* Main content will display selected animal details or welcome message */}
+          
           <MainContent
             clickedAnimal={clickedAnimal}
             animalPopUp={togglePopUp}
