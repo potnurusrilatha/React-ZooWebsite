@@ -6,31 +6,27 @@ import styles from '../navigation.module.css'
 
   
   const MobileNav = () => {
-        const [isOpen, setIsOpen] = useState(false);
+      const [isOpen, setIsOpen] = useState(false);
   
-      return (
-          <div className={styles.mobileNav}>
-            <div className={styles.navBar}>
-              {!isOpen ? (
-                <List size={32} onClick = {() => setIsOpen(true)} />
-              ) : (
-                <XCircle size={32}  onClick = {() => setIsOpen(false)}/>
-            )}
-            </div>
-           {isOpen && (
-  <div className={`${styles.mobileMenuContent} ${isOpen ? styles.showMenu : styles.hideMenu}`}>
-    {pages.map((item, index) => (
-      <div key={index} className={styles.navCard}>
-        <NavigationItem name={item} handleClose={() => setIsOpen(false)} />
+  return (
+    <div className={styles.mobileNav}>
+      <div className={styles.navBar}>
+        {!isOpen ? (
+          <List size={32} onClick = {() => setIsOpen(true)} />
+          ) : (
+          <XCircle size={32}  onClick = {() => setIsOpen(false)}/>
+          )}
       </div>
-    ))}
-  </div>
-)}
-</div>
+      {isOpen && (
+        <div className={`${styles.mobileMenuContent} ${isOpen ? styles.showMenu : styles.hideMenu}`}>
+          {pages.map((item, index) => (
+            <div key={index} className={styles.navCard}>
+              <NavigationItem name={item} handleClose={() => setIsOpen(false)} />
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
   )
-    }
-
-
-
-
+  }
 export default MobileNav;
