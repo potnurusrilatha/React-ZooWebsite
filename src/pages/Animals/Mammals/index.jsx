@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from '../../Animals/animals.module.css';
 import { animalArray } from '../../../data/animals';
 import SideBar from '../../../components/SideBar';

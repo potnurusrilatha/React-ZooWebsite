@@ -34,11 +34,8 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
             <p><span>Length: </span>{clickedAnimal.length}</p>
             <p><span>Weight: </span>{clickedAnimal.weight}</p>
             <p><span>Place: </span>{clickedAnimal.place}</p>
-            <p><span>Src: </span>{clickedAnimal.src}</p>
             <p><span>GroupLink: </span><NavLink to = {`/${clickedAnimal.group.toLowerCase()}`} >{clickedAnimal.group}</NavLink>
               </p>
-            <p><span>Icon: </span>{clickedAnimal.icon}</p>
-            <p><span>Group: </span>{clickedAnimal.group}</p>
           </div>
         
         </div>

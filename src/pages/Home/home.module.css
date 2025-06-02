@@ -3,9 +3,7 @@
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
-  /* background-color: yellowgreen; */
   color: black;
-  /* position: absolute; */
 }
 .overlay {
   height: 50%;
@@ -23,7 +21,6 @@
 }
 
 .homeTitle {
-  /* position: absolute; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -36,14 +33,9 @@
 
 .main {
   display: flex;
-  /* flex: 1; */
   padding: 8px;
   gap: 20px;
 }
-
-/* .homeWrapper {
-  padding-top: 80px;
-} */
 
 .sliderContainer {
   position: relative;
@@ -51,7 +43,6 @@
   left: 0;
   width: 100%;
   height: 50%;
-  /* max-height: 300px;  */
   overflow: hidden;
   z-index: 0;
 }

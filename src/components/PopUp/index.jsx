@@ -15,16 +15,13 @@ const PopUp = ({ chosenAnimal, closePopUp }) => {
         <div className={styles.animalDetails}>
           <div className={styles.animalDetailsContent}>
             <div className={styles.animalDetailsList}>
-              <p><span>Lifespan: </span>{chosenAnimal.lifespan}</p>
-              <p><span>Group: </span>{chosenAnimal.group}</p>
+              <p><span>Lifespan: </span>{chosenAnimal.lifeSpan}</p>
               <p><span>Food: </span>{chosenAnimal.food}</p>
               <p><span>Length: </span>{chosenAnimal.length}</p>
               <p><span>Weight: </span>{chosenAnimal.weight}</p>
               <p><span>Place: </span>{chosenAnimal.place}</p>
-              <p><span>Src: </span>{chosenAnimal.src}</p>
               <p><span>GroupLink: </span><NavLink to = {`/${chosenAnimal.group.toLowerCase()}`} >{chosenAnimal.groupLink}</NavLink>
               </p>
-              <p><span>Icon: </span>{chosenAnimal.icon}</p>
               <p className={styles.description}>{chosenAnimal.description}</p>
             </div>
           </div>
