@@ -18,7 +18,7 @@ const PopUp = ({ chosenAnimal, closePopUp }) => {
               <p><span>Lifespan: </span>{chosenAnimal.lifeSpan}</p>
               <p><span>Food: </span>{chosenAnimal.food}</p>
               <p><span>Length: </span>{chosenAnimal.length}</p>
-              {/* <p><span>Weight: </span>{chosenAnimal.weight}</p> */}
+              <p><span>Weight: </span>{chosenAnimal.weight}</p>
               <p><span>Place: </span>{chosenAnimal.place}</p>
               <p><span>GroupLink: </span><NavLink to = {`/${chosenAnimal.group.toLowerCase()}`} >{chosenAnimal.groupLink}</NavLink>
               </p>

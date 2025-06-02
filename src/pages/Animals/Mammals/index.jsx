@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import styles from '../animals.module.css';
-import { animalArray } from '../../../src/data/animals';
-import SideBar from '../../../src/components/SideBar';
-import MainContent from '../../../src/components/MainContent';
+import { animalArray } from '../../../data/animals';
+import SideBar from '../../../components/SideBar';
+import MainContent from '../../../components/MainContent';
 import mammalsvideo from '../../../assets/video/mammals.mp4';
-import PopUp from '../../../src/components/PopUp';
+import PopUp from '../../../components/PopUp';
 
 const Mammals = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
