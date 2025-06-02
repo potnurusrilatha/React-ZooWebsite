@@ -18,7 +18,7 @@
 }
   
 .sidebarClosed {
-  transform: translateX(-130%);
+  transform: translateX(-150%);
 }
   
 .sidebarListMenu {

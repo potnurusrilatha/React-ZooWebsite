@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import styles from '../../Animals/animals.module.css';
 import { animalArray } from '../../../data/animals';
 import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent';
 import birdsVideo from '../../../assets/video/Birds.mp4';
 import PopUp from '../../../components/PopUp';
+import Slideshow from '../../../components/Slideshow';
 
 const Birds = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
@@ -51,10 +52,13 @@ const Birds = () => {
               description: "Take flight into the fascinating world of birds! From soaring eagles to tiny hummingbirds, these feathered creatures are masters of the skies, known for their songs, colors, and incredible migrations."
             }}
           />
+          
         </div>
       ) : (
         <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />
       )}
+        <Slideshow category="Birds" />
+
     </div>
   );
 };

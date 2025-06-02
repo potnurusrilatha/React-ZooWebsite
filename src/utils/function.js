@@ -11,6 +11,10 @@ export const getImageUrl = (images) => {
 }
 
 
+export const getslideshowImages = (images) => {
+    return new URL(`../assets/images/${images}`,import.meta.url).href;
+}
+
 export const getVideoUrl = (video) => {
     return new URL(`../assets/video/${video}`,import.meta.url).href;
 }

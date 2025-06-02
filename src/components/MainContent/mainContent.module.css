@@ -1,8 +1,7 @@
 .mainContent {
   width: 100%;
-  /* min-width: 100%; */
   padding: 2rem;
-  background-color: #f4f4f4;
+  background-color: black;
   display: flex;
   justify-content: center;
 }

@@ -1,4 +1,3 @@
-// import styles from '../Home/home.module.css';
 import styles from '../Animals/animals.module.css'
 import { animalArray } from '../../data/animals';
 import SideBar from '../../components/SideBar';
