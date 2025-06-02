@@ -28,7 +28,7 @@ let mammalTasmanianDevil  = new Animals("Mammals", "Tasmanian Devil", 5, ["A pre
 
 let mammalquokka  = new Animals("Mammals", "Quokka", 10, ["Plant eaters", " shrubs", "grasses"],
     "The Quokka, Setonix brachyurus, was described by early Dutch explorer, Willem de Vlamingh, 'as a kind of rat as big as a common cat'. His first sighting of the Quokka was on an island off the mouth of the Swan River. He named the island Rottenest ('rat nest') in honour of this sighting. The island is now known as Rottnest Island. Essentially the Quokka looks very much like other wallabies.It has short, very coarse and thick grey-brown fur over most of the body with lighter parts underneath. Its facial features consist of a naked nose on a short, broad face with rounded furry ears.The tail is relatively short and mostly devoid of hair. In contrast, the hair on the feet extends to cover its claws.",
-    50, 3, "Rottnest Island,few places on mainland Western Australia",  "./images/quokka.jpg", 'Mammals', './Mammals/index.jsx', 'Quokka.jpg', 'quokka.png');
+    50, 3, "Rottnest Island,few places on mainland Western Australia",  "./images/Quokka.jpg", 'Mammals', './Mammals/index.jsx', 'Quokka.jpg', 'quokka.png');
 
 let reptileFrillNeckedLizard = new Animals("Reptiles","Frill-necked lizard", 20,["small insects", "spiders"], 
         "When this unique creature feels threatened, it rises on its hind legs, opens its yellow-coloured mouth, unfurls the colorful, pleated skin flap that encircles its head, and hisses. If an attacker is unintimidated by these antics, the lizard simply turns tail, mouth and frill open, and bolts, legs splaying left and right. It continues its deliberate run without stopping or looking back until it reaches the safety of a tree.",
