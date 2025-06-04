@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import styles from "./slideShow.module.css";
+import styles from "./slideshow.module.css";
 import { slideshowImages } from "../../data/animals";
 import { getslideshowImages } from '../../utils/function'
 

@@ -5,7 +5,7 @@ import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent';
 import birdsVideo from '../../../assets/video/Birds.mp4';
 import PopUp from '../../../components/PopUp';
-import Slideshow from '../../../components/Slideshow';
+import Slideshow from '../../../components/Slideshow'
 
 const Birds = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
