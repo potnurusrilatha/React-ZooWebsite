@@ -27,6 +27,7 @@ const MainContent = ({ clickedAnimal, animalPopUp, defaultMessage }) => {
       <div className={styles.animalDetails}>
         <h1>{clickedAnimal.name}</h1>
         <div className={styles.animalDetailsContent}>
+          {clickedAnimal.image} lklk 
           <img src={getImageUrl(clickedAnimal.image)} alt={clickedAnimal.name} />
           <div className={styles.animalDetailsList}>
             <p><span>Lifespan: </span>{clickedAnimal.lifeSpan}</p>
