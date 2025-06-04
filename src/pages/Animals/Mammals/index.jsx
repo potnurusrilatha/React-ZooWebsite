@@ -5,6 +5,7 @@ import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent';
 import mammalsvideo from '../../../assets/video/mammals.mp4';
 import PopUp from '../../../components/PopUp';
+import Slideshow from '../../../components/Slideshow';
 
 const Mammals = () => {
   const [clickedAnimal, setClickedAnimal] = useState(null);
@@ -61,6 +62,7 @@ const Mammals = () => {
           closePopUp={togglePopUp}
         />
       )}
+       <Slideshow category="Mammals" />
     </div>
   );
 };

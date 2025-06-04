@@ -1,3 +1,5 @@
+import Mammals from "../pages/Animals/Mammals";
+
  export const pages= ["Home", "Mammals", "Reptiles", "Birds"];
 
 function Animals(groupName, name, lifeSpan, food, description, length, weight, place, src, group, groupLink, image, icon) {
@@ -81,6 +83,29 @@ let animalArray = [...mammalArray, ...reptileArray, ...birdArray];
     { src: "bird9.jpg", label: "Bird9" },
     { src: "bird10.jpg", label: "Bird10" }, 
   ],
-  // Mammals,  if i want 
-  // Reptiles, if i want
+
+   Mammals:[
+    { src: "mammal1.jpg", label:"Mammal1"},
+     { src: "mammal2.jpg", label: "Mammal2"},
+    { src: "mammal3.jpg", label: "Mammal3"},
+    { src: "mammal4.jpg", label: "Mammal4"},
+    { src: "mammal5.jpg",label: "Mammal5"},
+    { src: "mammal6.jpg", label: "Mammal6"},
+    { src: "mammal7.jpg", label:"Mammal7"},
+    { src: "mammal8.jpg", label:"Mammal8"},
+    { src: "mammal9.jpg", label:"Mammal9"},
+  ],
+  
+   Reptiles:[
+    { src: "reptile1.jpg", label: "Reptile1"},
+     { src: "reptile2.jpg", label: "Reptile2"},
+     { src: "reptile3.jpg", label: "Reptile3"},
+     { src: "reptile4.jpg", label: "Reptile4"},
+     { src: "reptile5.jpg", label: "Reptile5"},
+     { src: "reptile6.jpg", label: "Reptile6"},
+     { src: "reptile7.jpg", label: "Reptile7"},
+     { src: "reptile8.jpg", label: "Reptile8"},
+    { src: "reptile9.jpg", label: "Reptile9"},
+  ]
+   
 };

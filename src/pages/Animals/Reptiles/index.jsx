@@ -5,6 +5,7 @@ import SideBar from '../../../components/SideBar';
 import MainContent from '../../../components/MainContent';
 import reptilesvideo  from '../../../assets/video/reptiles.mp4'
 import PopUp from '../../../components/PopUp';
+import Slideshow from '../../../components/Slideshow';
 
 const Reptiles = () => {
 
@@ -55,6 +56,7 @@ const Reptiles = () => {
       </div>}
       
       {showPopUp && <PopUp chosenAnimal={clickedAnimal} closePopUp={togglePopUp} />}
+      <Slideshow category={"Reptiles"} />
     </div>
   );
 };

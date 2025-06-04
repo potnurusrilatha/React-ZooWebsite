@@ -7,6 +7,7 @@ import { useState } from 'react';
 import BackgroundSlider from '../../components/BackgroundSlider';
 
 
+
 const Home = ({ chosenAnimal, click, getPopUp }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
@@ -51,10 +52,11 @@ const Home = ({ chosenAnimal, click, getPopUp }) => {
     
         />
          <BackgroundSlider />
-          </div>
-     
+        
+        </div>
+         
     </div>
-    {/* </div> */}
+    
     </>
   );
 };
