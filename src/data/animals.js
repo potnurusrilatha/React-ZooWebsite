@@ -32,11 +32,11 @@ let mammalquokka  = new Animals("Mammals", "Quokka", 10, ["Plant eaters", " shru
 
 let reptileFrillNeckedLizard = new Animals("Reptiles","Frill-necked lizard", 20,["small insects", "spiders"], 
         "When this unique creature feels threatened, it rises on its hind legs, opens its yellow-coloured mouth, unfurls the colorful, pleated skin flap that encircles its head, and hisses. If an attacker is unintimidated by these antics, the lizard simply turns tail, mouth and frill open, and bolts, legs splaying left and right. It continues its deliberate run without stopping or looking back until it reaches the safety of a tree.",
-        90,1,"Northern  Austalia",  "./images/Frill necked lizard.jpg", 'Reptiles', './Reptiles/index.jsx', 'Frill necked lizard.jpg', 'frill-lizard.png');
+        90,1,"Northern  Austalia",  "./images/Frill necked lizard.jpg", 'Reptiles', './Reptiles/index.jsx', 'Frill-necked-lizard.jpg', 'frill-lizard.png');
    
 let reptileHawksbillTurtle = new Animals("Reptiles","Hawksbill Turtle", 50,["sponges", "jellyfish","seaplants"], 
     "The Hawksbill Sea Turtle gets its common name from the distinctive mouth, which resembles a bird’s beak. The shell, or carapace, is covered in large overlapping scutes, which are a distinctive brown/green/amber background with lighter brown streaks throughout. At the edge of the carapace they overlap in such a way as to form a serrated edge. The turtle has an elongated head and flippers which have two visible claws on the end. The flippers and head are covered in large green, brown or yellow scales. The average adult female weighs 50 kg and their carapace (shell) is approximately 80 cm in length",
-    80,50,"Tropical coasts of Queensland, Northern Territory and Western Australia",  "./images/Hawksbill Turtle.jpg", 'Reptiles', './Reptiles/index.jsx', 'Hawksbill Turtle.jpg', 'hawksbill-turtle.png');
+    80,50,"Tropical coasts of Queensland, Northern Territory and Western Australia",  "./images/Hawksbill Turtle.jpg", 'Reptiles', './Reptiles/index.jsx', 'Hawksbill-Turtle.jpg', 'hawksbill-turtle.png');
 
     
 let reptilePerentie  = new Animals("Reptiles","Perentie", 20,["Carnivore", "animals like kangaroos", "rabbits", "lizards and birds"], 
