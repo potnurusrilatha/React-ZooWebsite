@@ -70,18 +70,17 @@ let animalArray = [...mammalArray, ...reptileArray, ...birdArray];
 
  export const slideshowImages = {
   Birds: [
-    { src: "bird1.jpg", label: "bird1" },
-    { src: "bird2.jpg", label: "bird2" },
-    { src: "bird3.jpg", label: "bird3" },
-    { src: "bird4.jpg", label: "bird3" },
-    { src: "bird5.jpg", label: "bird3" },
-    { src: "bird6.jpg", label: "bird3" },
-    { src: "bird7.jpg", label: "bird3" },
-    { src: "bird8.jpg", label: "bird3" },
-    { src: "bird9.jpg", label: "bird3" },
-    { src: "bird10.jpg", label: "bird3" },
-
-    
+    { src: "bird1.jpg", label: "Bird1" },
+    { src: "bird2.jpg", label: "Bird2" },
+    { src: "bird3.jpg", label: "Bird3" },
+    { src: "bird4.jpg", label: "Bird4" },
+    { src: "bird5.jpg", label: "Bird5" },
+    { src: "bird6.jpg", label: "Bird6" },
+    { src: "bird7.jpg", label: "Bird7" },
+    { src: "bird8.jpg", label: "Bird8" },
+    { src: "bird9.jpg", label: "Bird9" },
+    { src: "bird10.jpg", label: "Bird10" }, 
   ],
-  // Mammals, Reptiles, etc. if needed
+  // Mammals,  if i want 
+  // Reptiles, if i want
 };

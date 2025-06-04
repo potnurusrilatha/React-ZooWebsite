@@ -4,6 +4,7 @@ import styles from "./slideShow.module.css";
 import { slideshowImages } from "../../data/animals";
 import { getslideshowImages } from '../../utils/function'
 
+
 const Slideshow = ({ category }) => {
   const images = slideshowImages[category] || [];
   const duplicatedImages = [...images, ...images];
