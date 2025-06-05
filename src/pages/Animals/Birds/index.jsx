@@ -28,6 +28,7 @@ const Birds = () => {
           className={styles.backgroundMediaVideo}
           src={birdsVideo}
           autoPlay
+          loop
           muted
           type="video/mp4"
         />

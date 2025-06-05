@@ -53,6 +53,7 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 999;
+    margin-right: 4rem;
     opacity: 0;
     transform: translateY(-10px);
 }
